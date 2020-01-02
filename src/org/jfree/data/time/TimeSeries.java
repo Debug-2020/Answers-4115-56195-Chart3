@@ -1063,7 +1063,7 @@ public class TimeSeries extends Series implements Cloneable, Serializable {
                         = (TimeSeriesDataItem) this.data.get(index);
                 TimeSeriesDataItem clone = (TimeSeriesDataItem) item.clone();
                 try {
-                    copy.add(clone, false);
+                    copy.add(clone);
                 }
                 catch (SeriesException e) {
                     e.printStackTrace();
